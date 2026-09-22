@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spy Room</title><link rel="stylesheet" href="/style.css"></head>
+<body><main>
+<header><div class="brand">SPY ROOM</div><div id="roomBadge" class="badge hidden"></div></header>
+<section id="home" class="panel hero">
+  <div class="eyebrow">REAL-TIME SOCIAL DEDUCTION</div>
+  <h1>Find the Spy.</h1>
+  <p>Join from separate phones or laptops. Everyone gets the same secret topic — except the Spy.</p>
+  <div class="actions">
+    <form id="createForm"><input id="createName" maxlength="18" placeholder="Your name" required><button>Create room</button></form>
+    <div class="or">or</div>
+    <form id="joinForm"><input id="joinCode" maxlength="4" placeholder="ROOM CODE" required><input id="joinName" maxlength="18" placeholder="Your name" required><button class="secondary">Join room</button></form>
+  </div>
+  <div class="rules"><b>How to play</b><span>1. Host starts with 3–8 players.</span><span>2. Everyone except the Spy sees the secret topic and a question.</span><span>3. Discuss and answer without making the topic too obvious.</span><span>4. After 60 seconds, vote for the Spy. Majority correct wins.</span></div>
+</section>
+<section id="game" class="hidden"></section>
+<div id="toast" aria-live="polite"></div>
+</main><script src="/socket.io/socket.io.js"></script><script src="/app.js"></script></body></html>
